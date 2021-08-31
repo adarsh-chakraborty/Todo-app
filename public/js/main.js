@@ -68,7 +68,7 @@ function refresh() {
 				todo.isNewTodo ? `newtodo hidden` : ''
 			}">
                     <div class="flex justify-between px-2">
-                        <p class="w-64 font-poppins">
+                        <p class="w-36 md:w-48 xl:64 font-poppins">
                             ${todo.todo}
                         </p>
                         <div class="flex space-x-1 text-gray-800 items-center">
@@ -189,8 +189,6 @@ function moveItemUp(currentIndex) {
 	todoData[currentIndex - 1] = todoData[currentIndex];
 	todoData[currentIndex] = temp;
 	refresh();
-	console.log(currentIndex);
-	console.log(currentIndex);
 }
 
 function moveItemDown(currentIndex) {

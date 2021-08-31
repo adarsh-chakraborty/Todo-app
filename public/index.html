@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylefull.css">
     <title>Todo app</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -13,15 +13,15 @@
 </head>
 
 <body>
-    <div class="flex bg-white h-screen justify-center ">
-        <div class="mt-10 bg-gray-100 w-1/2 max-w-lg rounded-md shadow-lg flex flex-col items-center">
+    <div class="flex bg-white h-screen justify-center w-11/12 mx-auto">
+        <div class="mx-4 mt-10 bg-gray-100 w-11/12 sm:w-1/2 max-w-lg rounded-md shadow-lg flex flex-col items-center">
 
             <div class="p-1 flex flex-col items-center">
                 <h1 class="text-2xl font-header">Todo App</h1>
-                <h2 class="font-poppins">Enter something to add to your todo list</h2>
+                <h2 class="text-sm sm:text-base font-poppins">Enter something to add to your todo list</h2>
             </div>
-            <div>
-                <input id="inputBox" type="text" class="border border-gray-700 py-1 rounded">
+            <div class="font-poppins">
+                <input id="inputBox" type="text" class="border border-gray-700 py-1 rounded focus:bg-gray-50">
                 <button id="btnAdd" class="border border-gray-600 px-4 py-1 rounded-md">Add</button>
 
             </div>
